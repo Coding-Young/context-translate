@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "우클릭 번역",
+    "options_ui": {
+    	"page": "options.html",
+    	"open_in_tab": true,
+    	"chrome_style": true
+    },
+    "version": "1.0.1",
+    "permissions": [
+    	"contextMenus",
+    	"storage"
+    ],
+    "background" : {
+    	"scripts": ["background.js"]
+     },
+    
+    "description": "우클릭으로 사이드바에서 번역 서비스를 이용하여 보세요.",
+    "icons": {"16": "./icon/icon16.png",
+    	"48": "./icon/icon48.png",
+	"128": "./icon/icon128.png"},
+
+    "browser_action": {
+    	"default_title": "우클릭 번역 도움말 보기",
+	"default_popup": "popup.html"
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>우클릭 번역 설정</title>
+<meta charset="UTF-8"/>
+<style>
+#status{
+	min-height: 1.5rem;
+	font-weight: bold;
+	padding: 3px;
+	color: green;
+}
+
+h1{
+	display:block;
+	font-weight: bold;
+}
+body{
+	text-align: center;
+}
+#warn{
+	color:red;
+	font-weight:bold;
+}
+</style>
+</head>
+<body>
+<h1>우클릭 번역 설정 페이지에 오신 것을 환영합니다.</h1>
+<p>사용할 번역 서비스를 결정하세요!</p>
+<select id="service">
+ <option value="papago">파파고</option>
+ <option value="google">구글</option>
+ <option value="kakaoi">카카오 i</option>
+ <option value="bing">빙</option>
+</select>
+<p id="warn"></p>
+<button id="save">저장</button>
+<div id="status"></div>
+<script src="options.js"></script>
+</body>
+</html>
